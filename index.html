@@ -40,6 +40,7 @@ body{
     backdrop-filter: blur(10px);
     box-shadow: 0 0 25px rgba(0,0,0,0.3);
     max-width:420px;
+    width:90%;
 }
 
 h1{
@@ -77,20 +78,18 @@ button:hover{
 <div class="container">
 <h1>Central Digital</h1>
 
-<p>Canais, filmes e séries com alta qualidade e máxima estabilidade.</p>
-<p>Entretenimento completo em um só lugar.</p>
-<p>Suporte rápido e atendimento imediato via WhatsApp.</p>
+<p>Canais, filmes e séries com qualidade e estabilidade.</p>
+<p>Atendimento rápido via WhatsApp.</p>
 
 <button onclick="redirect()">
 Falar com Atendimento
 </button>
-
 </div>
 
 <script>
 function redirect() {
 fbq('trackCustom', 'ClickWhatsApp');
-window.location.href="https://wa.me/5517991346909?text=Olá%2C%20quero%20mais%20informações%20sobre%20os%20planos";
+window.location.href="https://wa.me/5517991346909?text=Olá%2C%20quero%20informações%20sobre%20os%20planos";
 }
 </script>
 
