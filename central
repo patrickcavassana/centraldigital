@@ -1,0 +1,42 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Central Digital</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '388371984077229');
+fbq('track', 'PageView');
+</script>
+</head>
+
+<body style="text-align:center;font-family:Arial;padding-top:80px;">
+
+<h1>Atendimento via WhatsApp</h1>
+<p>Clique abaixo para falar com nosso suporte.</p>
+
+<button onclick="redirect()" 
+style="padding:15px 30px;font-size:18px;background:#25D366;color:white;border:none;border-radius:8px;cursor:pointer;">
+Falar no WhatsApp
+</button>
+
+<script>
+function redirect() {
+fbq('trackCustom', 'ClickWhatsApp');
+window.location.href="https://wa.me/5517991346909?text=Olá%2C%20quero%20saber%20mais%20sobre%20o%20serviço";
+}
+</script>
+
+</body>
+</html>
